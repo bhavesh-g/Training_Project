@@ -15,16 +15,16 @@ Made this as my Summer Training cum Internship Project with [**ESCI**, Hyderabad
   It shows **arrival** and **departure** time for that train on every station in its route.  
   Users only need to enter their train number and hit the **GO** button. All the details of Scheduled Arrival & Departure wrt to Station     will   be on screen.**Train Name and Days on which it runs on** are also displayed.
 
-* **Location Finder**
+* **Location Finder**  
   Users can track _themselves_ too. In this by just pressing single button, users can see their Live location on screen.
   It also displays geometric location of user in form of **Longitude** and **Latitude**.
   Note: _Best works with devices having GPS device like mobiles._
 
-* **Train Code Finder**
+* **Train Code Finder**  
   Users only need to enter a part of train name, Like only first 3-4 letters and hit the **GO** button.
   All the similar train names  with their respective codes will be displayed on the screen.
   
-* **Station Code Finder**
+* **Station Code Finder**  
   Users only need to enter a part of station name, Like only first 3-4 letters and hit the **GO** button.
   All the similar station with their respective codes will be displayed on the screen.
   
@@ -35,7 +35,7 @@ Made this as my Summer Training cum Internship Project with [**ESCI**, Hyderabad
 
 Note:_for Login and Register, you will need to setup the [MONGO DB](https://www.mongodb.com/) and [Express JS](https://expressjs.com/). Configure them with this._
 
-* Will be adding 2-3 services like **Seat Availability Checker** and *8Trains between two Stations** etc.
+* Will be adding 2-3 services like **Seat Availability Checker** and **Trains between two Stations** etc.
 
 ### THANKS FOR BEING HERE...
 
