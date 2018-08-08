@@ -1,0 +1,43 @@
+<audio controls autoplay hidden>
+
+    <source src="assets/audio/railway_bell.mp3" type="audio/mpeg">
+  
+  </audio>
+<div style="overflow:scroll;height:500px;">
+<h1 class="display-4 text-center">RouteFinder</h1>
+<hr>
+  
+  <form style="padding: 10px;border-radius:20px 20px 20px 20px;border-width:2px 0px 2px 0px;border-style:solid;border-color:steelblue;background-color:#32383e;color:white;">
+    <div class="form-group row">
+      <label class="col-sm-3 col-form-label">Train Number</label>
+      <div class="col-sm-9">
+          <input id="inputlivetrainknowmore"  class="form-control text-center" name="query" type="text"  [(ngModel)]="query"  placeholder="Type Train number and go!">
+         
+      </div>
+    </div>
+    <button id="buttonlivetrainknowmore" class="btn btn-primary col-sm-12 text-center" type="submit">Go!</button>
+  </form>
+<div class="row">
+  <div class="col-sm-12">
+    
+    <p class="lead" id="tnamelabel" style=" visibility:hidden;margin-top: 15px;">Train Name: <span class="badge badge-pill badge-primary badge-lg lead" id="tname" ></span ></p>
+    <p id="runsonlabel" class="lead" style="  visibility:hidden; margin-top: 10px;"> Runs On: <span id="runson"></span></p>
+  </div>
+</div>
+
+
+
+ 
+  <table class=" table-dark table" id="knowmoretable" style=" visibility:hidden;">
+    <tr>
+      <th >Station Name</th>
+      <th >Sch Arrival</th>
+      <th >Sch Departure</th>
+
+
+    </tr>
+    
+  
+  </table>
+</div>
+<button autofocus id="servicefocusbutton"></button>

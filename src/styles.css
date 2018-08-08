@@ -1,0 +1,115 @@
+#topblank{
+    min-height: 600px; 
+    background-image: url('assets\images\trainstation.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    margin:0px auto; 
+    opacity: 0.96;
+    transition: opacity 1s;
+  
+    }
+    
+    #toptextcontainer{
+        margin-top: 5px;
+        margin-left: 0px;
+    }
+    
+    #toptextcontainertext{
+        
+    }
+    #toptextcontainertext h1{
+        font-size: 90px;
+        color:yellow;
+        transition: font-size 1s,color 2s;
+    }
+
+    #toptextcontainertext h5{
+        font-size: 50px;
+        color: white;
+        transition: font-size 1s,color 2s;
+    }
+    #toptextcontainertext h1:hover{
+        font-size: 100px;
+        color:yellow;
+    }
+    #toptextcontainertext h5:hover  {
+        color:orangered;
+    }
+    a:hover {
+        color: white;
+        text-decoration: none;
+    }
+    #topblank:hover{
+        opacity: 1;
+
+    }
+
+    @keyframes blink {
+        0% { color  : yellow; }
+        49% { color : yellow; }
+        50% { color : orange; font-size: 20px; }
+        100% { color: orange; }
+    }
+
+    
+    @keyframes blinkf {
+        0% { background-color  : black;color: black; }
+        49% { background-color : black; color: black;}
+        50% { background-color : #121416 ; color:#121416; }
+        100% { background-color: black; color: black;}
+    }
+
+#welcome{
+    animation: blink 3s alternate-reverse infinite;
+}
+
+.hr-primary{
+    background-image: -webkit-linear-gradient(right, rgba(66,133,244,.8), rgba(66, 133, 244,.6), rgba(0,0,0,0));
+  }
+  hr {
+    height: 5px;
+  
+   
+  }
+
+
+
+  .list-group-item-action:focus, .list-group-item-action:hover {
+    color: #ffffff;
+
+}
+
+
+.list-group-item:focus, .list-group-item:hover {
+    z-index: 1;
+    text-decoration: none;
+    background-color: #32383e;
+}
+/*
+.carousel-caption {
+
+bottom:10px;
+right:15%;}
+
+
+#jjjj {
+
+    bottom:10px;
+    right:15%;}*/
+span img{
+    transition: border-radius 0.5s;
+}
+    span img:hover{
+       border:1px solid black;
+       border-radius: 40px;
+    }
+
+    @media only screen and (max-width: 1290px) {
+        #footer {
+            visibility: hidden;
+        }
+    }
+    #footer{
+        animation: blinkf 10s linear infinite;
+    }

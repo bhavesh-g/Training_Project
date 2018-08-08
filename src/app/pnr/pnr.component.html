@@ -1,0 +1,74 @@
+<audio controls autoplay hidden>
+
+  <source src="assets/audio/railway_bell.mp3" type="audio/mpeg">
+
+</audio>
+<h1  class="display-4 text-center">PNR Enquiry</h1>
+<p class="text-muted text-center">Enquire your PNR, get all details of journey!</p>
+<hr>
+  
+  <form style="padding: 10px;background-color:#32383e;color:white;border-radius:20px 20px 20px 20px;border-width:2px 0px 2px 0px;border-style:solid;border-color:steelblue;">
+    <div class="form-group row">
+      <label class="col-sm-3 col-form-label">PNR Number</label>
+      <div class="col-sm-9">
+          <input id="inputpnr"  class="form-control text-center" name="query" type="text"  [(ngModel)]="query"  placeholder="Type PNR number">
+         
+      </div>
+    </div>
+    <button id="buttonpnr" class="btn btn-primary col-sm-12 text-center" type="submit">Go!</button>
+  </form>
+
+
+  <div class="row" style="margin-top:10px;">
+    <div class="col-sm-12" style="background-color: #007bff;height:2px;">
+
+    </div>
+  </div>
+  <div class="results " id="resdivstncode" style="overflow: scroll;height:240px; ">
+    <p id="makeitsticky" class="lead  col-sm-12" style="background-color: whitesmoke;color:rgba(0, 0, 0, 0.8);">Results:</p>
+    <div class="resfromapi " >
+      <table class="table table-dark">
+        
+        <tr>
+            <td>Boarding Station</td>
+            <td id="boardingstation"></td>
+           </tr>
+
+           <tr>
+              <td>Dest. Station</td>
+              <td id="deststation"></td>
+             </tr>
+
+             <tr>
+                <td>Date Of Journey</td>
+                <td id="doj"></td>
+               </tr>
+
+               <tr>
+                  <td>Train no.</td>
+                  <td id="trainno"></td>
+                 </tr>
+
+                 <tr>
+                    <td>Train name</td>
+                    <td id="trainname"></td>
+                   </tr>
+
+                   <tr>
+                      <td>No. of Passengers</td>
+                      <td id="noofpassengers"></td>
+                     </tr>
+
+                     <tr>
+                        <td>Passengers Status</td>
+                        <td>
+                          <ul id="passstatus">
+
+                          </ul>
+                        </td>
+                       </tr>
+      </table>
+    </div>
+
+  </div>
+  <button autofocus id="servicefocusbutton"></button>

@@ -1,0 +1,125 @@
+<audio controls autoplay hidden>
+
+        <source src="assets/audio/register.mp3" type="audio/mpeg">
+      
+      </audio>
+   <div class="row">
+		<div class="col-sm-2"></div>
+		<div class="col-sm-6">
+			<h1 class="text-right display-4">Register</h1>
+		</div>
+		<div class="col-sm-4 text-right">
+			<span class="text-right closebutton h4"><span class="text-muted lead">Unfade </span><button class=" closebutton" class="btn-danger" >X</button></span>	
+		</div>
+	</div>
+   
+   
+  
+    <form id="registerform" (ngSubmit)="registration()" style="padding:10px;background-color: white;border-radius:20px 20px 20px 20px;border-width:2px 0px 2px 0px;border-style:solid;border-color:steelblue;color: black;">
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Name</label>
+            <div class="col-sm-10">
+                <input required autofocus class="form-control" name="name" type="text"  [(ngModel)]="name"  placeholder="Your Full Name here">
+               
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Phone</label>
+            <div class="col-sm-10">
+                <input required class="form-control" name="phone" type="text" [(ngModel)]="phone"  placeholder="Phone Number" value="+91">
+          
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+                <input required class="form-control" name="email" type="email"   [(ngModel)]="email"  placeholder="Your email here">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+               <input required class="form-control" name="password" type="password" [(ngModel)]="password"   placeholder="password" >
+            
+            </div>
+        </div>
+        
+ <div class="form-group row ">
+    <div class="col-sm-2" style="padding:0px 0px 0px 4px;">
+        <div class="" style="height: 2px;background-color: red" *ngIf="password.length > 0">
+            
+        </div>
+        
+                
+        
+    </div>
+
+    <div class="col-sm-4 " style="padding:0px;">
+            <div style="height: 2px;background-color: orange;" *ngIf="password.length >=4">
+                
+            </div>
+            
+        </div>
+
+        <div class="col-sm-6 " style="padding:0px 4px 0px 0px;">
+                <div style="height: 2px;background-color: #08bb08;" *ngIf="password.length >=8">
+                    
+                </div>
+                
+                
+            </div>
+</div>
+
+<div class="form-group row">
+    <div class="col-sm-12 " style="margin-top: 0px;">
+        
+        <div style="color: red;" *ngIf="password.length >0 && password.length<4">
+                <span class="text-muted" style="color:whitesmoke;">Strength: </span>WEAK
+        </div>
+
+        <div style="color: orange;" *ngIf="password.length >=4 && password.length<8">
+                <span class="text-muted" style="color:whitesmoke;">Strength: </span>MEDIUM
+        </div>
+                
+        <div style="color: #08bb08;" *ngIf="password.length >=8">
+                <span class="text-muted" style="color:whitesmoke;">Strength: </span>STRONG
+        </div>
+        
+    </div>
+</div>
+
+        
+
+       
+            <div class="form-group form-check">
+                    <div class="row">
+                        <div class="col-sm-6">
+                <input type="checkbox" name="check" [(ngModel)]="check" class="form-check-input">
+                <label class="form-check-label">Terms & Conditions</label>
+               </div>
+                    <div class="col-sm-4"></div>
+                    <div class="col-sm-2"><button class="btn  btn-info" type="reset">Reset</button></div>
+                </div>
+ 
+            </div>
+
+            
+            <div class="form-group row">
+                <div class="col-sm-12 text-center">
+                        
+                        <button id="registeractivebutton" class="btn-lg a btn-success" name="registerbutton" [(ngModel)]="registerbutton" type="submit"  *ngIf=check  >Register</button>
+                    <button disabled class="btn-lg a btn-info" type="submit"  *ngIf=!check style="background-color: #697b69;border-color:#697b69;" >Register</button>
+                    
+                </div>
+            </div>
+            </form>
+       
+
+
+
+        
+
+

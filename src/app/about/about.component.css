@@ -1,0 +1,26 @@
+.jumbotron{
+    padding: 0rem 0rem;
+    background: linear-gradient(lightblue,lightseagreen);
+}
+
+@keyframes blinkx {
+    0% { background-color  :lightblue; }
+    49% { background-color :lightblue; }
+    50% { background-color : lightseagreen;  }
+    100% { background-color: lightseagreen; }
+}
+@keyframes blinkz {
+    0% { background-color  : lightseagreen; }
+    49% { background-color : lightseagreen; }
+    50% { background-color :lightblue;  }
+    100% { background-color:lightblue; }
+}
+
+
+#lione{
+animation: blinkx 3s reverse infinite;
+}
+
+#litwo{
+    animation: blinkz 3s reverse infinite;
+    }

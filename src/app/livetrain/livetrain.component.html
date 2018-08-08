@@ -1,0 +1,54 @@
+<audio controls autoplay hidden>
+
+  <source src="assets/audio/railway_bell.mp3" type="audio/mpeg">
+
+</audio>
+<div id="tobedropped">
+<h1 class="display-4 text-center">Live Train Status</h1>
+<p class="text-muted text-center">Find live train status by just typing train number</p>
+<hr>
+  
+  <form style="padding: 10px;border-radius:20px 20px 20px 20px;border-width:2px 0px 2px 0px;border-style:solid;border-color:steelblue;background-color:#32383e;color:white;">
+    <div class="form-group row">
+      <label class="col-sm-3 col-form-label">Train Number</label>
+      <div class="col-sm-9">
+            <input id="inputlivetrain"  class="form-control text-center" name="query" type="text"  [(ngModel)]="query"  placeholder="Type Train number">
+         </div>
+    </div>
+
+    <div class="form-group row">
+      <label class="col-sm-3 col-form-label">Train Start Date</label>
+      <div class="col-sm-9">
+            
+            <input  name="date"  type="date"  [(ngModel)]="querydate" id="inputdatelivetrain" class="form-control text-center">
+             
+         </div>
+    </div>
+
+
+    <button id="buttonlivetrain" class="btn btn-primary col-sm-12 text-center" type="submit">Go!</button>
+  </form>
+
+
+  <div class="row" style="margin-top:10px;">
+    <div class="col-sm-12" style="background-color: #007bff;height:2px;">
+
+    </div>
+  </div>
+  <div class="results " id="resdivlivetrain" style=" border-width:0px 2px 2px 2px;border-style:solid;border-color:#007bff;min-height: 170px;">
+    <p  class="lead " style="border-width:0px 0px 1px 0px;border-style: solid;border-color: #007bff;background-color: whitesmoke;color:rgba(0, 0, 0, 0.8);">Results:</p>
+    <div class="row" id="resfromapi">
+      <div class="col-sm-12">
+          <p style="color:red;visibility: visible;" class="text-center" id="resparatwolivetrain" >Train Status</p>
+        <p style="color:firebrick;visibility: visible;" class="text-center" id="resparalivetrain" >Train name </p>
+        
+        <p style="color:firebrick;visibility: visible;" class="text-center" id="resparathreelivetrain" >Current station</p>
+      </div>
+    </div>
+    
+
+  </div>
+  </div>
+  <button autofocus id="servicefocusbutton"></button>
+ 
+  

@@ -1,0 +1,12 @@
+.jumbotron  {
+    padding: 2rem 1rem;
+     margin-bottom: 0rem; 
+    background-color: #e9ecef;
+    border-radius: .3rem;
+    background-color: #ffffff;}
+    a[_ngcontent-c1]:hover {
+        color: blue;
+    }
+    a{
+        color:whitesmoke;
+    }

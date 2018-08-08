@@ -1,0 +1,6 @@
+.jumbotron{
+
+   min-height: 500px;
+   padding:0rem 0rem;
+   transition: background-color 4s;
+}

@@ -1,0 +1,27 @@
+#topblank{
+    min-height: 300px; 
+    background-image: url('trainfinal.jpg'); 
+    background-size: cover; 
+    background-position: right; 
+    background-repeat: no-repeat; 
+    margin:0px auto; 
+    }
+    
+    #toptextcontainer{
+        margin-top: 5px;
+        margin-left: 0px;
+    }
+    
+    #toptextcontainertext{
+        
+    }
+    #toptextcontainertext h1{
+        font-size: 90px;
+        color: white;
+        transition: font-size 1s;
+    }
+    #toptextcontainertext h1:hover{
+        font-size: 100px;
+    }
+    
+    

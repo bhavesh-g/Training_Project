@@ -1,0 +1,65 @@
+/* You can add global styles to this file, and also import other style files */
+
+.a{
+	   
+    border-radius: 50px;
+    background-color: #08bb08;
+    border-color: #08bb08;
+    min-width: 212px;
+    color: white;
+
+}
+
+.b{
+	
+    min-width: 212px;
+    background-color: orangered;
+    border-color: orangered;
+    color: white;
+    
+}
+
+
+#formbottom div a{
+	text-decoration: none;
+	color: black;
+	transition: font-weight 1s;
+}
+
+#formbottom div{
+	color:black;
+}
+#formbottom div a:hover{
+	color: #0056b3;
+	
+	font-weight: 600;
+}
+button:focus {
+    outline: none;
+    
+}
+
+.btn-success.focus, .btn-success:focus {
+     box-shadow: 0 0 0 0 rgba(40,167,69,.5); 
+}
+
+
+.a[_ngcontent-c1] {
+    border-style: none;
+    border-radius: 50px;
+    /* background-color: #08bb08; */
+   
+    min-width: 212px;
+    color: white;
+}
+#passwordtrans{
+    transition: width 2s;
+}
+#passwordtrans:hover{
+    width:300px;
+}
+.closebutton a{
+    background-color: darkred;
+    padding:2px;
+    font-size: xx-small;
+}
