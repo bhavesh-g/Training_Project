@@ -1,4 +1,4 @@
-## Training_Project
+# Training_Project
 Made this as my Summer Training cum Internship Project with [**ESCI**, Hyderabad](http://www.escihyd.org/)
 
 ### Services provided in this website project are:
